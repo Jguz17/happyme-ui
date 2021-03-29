@@ -3,3 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#home-container {
+  transform: translate(0, 25vh);
+}

@@ -1,11 +1,19 @@
 import React from 'react'
-import { Col, Row } from "react-bootstrap"
+import { Col, Row, Container, Button } from "react-bootstrap"
+import { motion } from "framer-motion"
 
 const Home = () => {
     return (
-        <Col>
-            <Row><h1>This is Home</h1></Row>
-        </Col>
+        <Container id="home-container">
+            <motion.div animate={{ scale: 1.25 }} transition={{ duration: .85 }} >
+                <Row>
+                    <Col className="text-center">
+                        <h3>An app designed to help you keep track of the things you are grateful for</h3>
+                        <Button variant="outline-primary" size="lg">Sign up now</Button>
+                    </Col>
+                </Row>
+            </motion.div>
+        </Container>
     )
 }
 
